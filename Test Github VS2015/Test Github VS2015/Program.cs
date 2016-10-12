@@ -23,6 +23,8 @@ namespace Test_Github_VS2015
 
             Console.WriteLine("format wyswietlania {0} {1:f3}", r, pole);
 
+            Console.WriteLine("Nazywasz się {1} masz {0} lat(a)", 22, "Asia");
+
             /*
              *  { numer_zmiennej : format wyświetlania }
              */
