@@ -29,8 +29,8 @@ namespace Test_Github_VS2015
              *  { numer_zmiennej : format wyświetlania }
              */
 
-            Console.ReadKey();
-            return;
+            //Console.ReadKey();
+            //return;
 
             //double r;
             /*
@@ -47,8 +47,6 @@ namespace Test_Github_VS2015
             string read = Console.ReadLine();
             double r = Convert.ToDouble(read);
             */
-
- 
 
             /*
                 
