@@ -51,13 +51,16 @@ namespace Test_Github_VS2015
             /*
                 
             Console.Write("Podaj długość promienia: ");
-            r = Convert.ToDouble(Console.ReadLine());
+            r = Convert.ToDouble(Console.ReadLine());
+
             double pole = Math.PI * r * r;
-            double obwod = 2 * Math.PI * r;
+            double obwod = 2 * Math.PI * r;
+
             Console.WriteLine("Pole koła o promieniu {0} wynosi: {1:f3}.", r, pole);
 
             Console.WriteLine("Obwód koła o promieniu {0} wynosi: {1:f3}.", r, obwod);
-            Console.ReadKey();            */
+            Console.ReadKey();
+            */
 
             //Console.WriteLine("Hello world!");
             //Console.ReadKey();
