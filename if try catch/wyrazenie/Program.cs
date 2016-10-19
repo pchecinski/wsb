@@ -12,12 +12,29 @@ namespace wyrazenie
         {
             double x = 0, y = 0, z = 0;
 
-            Console.Write("Podaj x: ");
-            x = Convert.ToDouble(Console.ReadLine());
-
-            Console.Write("Podaj y: ");
-            y = Convert.ToDouble(Console.ReadLine());
-
+            try
+            {
+                Console.Write("Podaj x: ");
+                x = Convert.ToDouble(Console.ReadLine());
+            }
+            catch
+            {
+                Console.WriteLine("x nie jest liczbą!");
+                Console.ReadKey();
+                return;
+            }
+            
+            try
+            {
+                Console.Write("Podaj y: ");
+                y = Convert.ToDouble(Console.ReadLine());
+            }
+            catch
+            {
+                Console.WriteLine("y nie jest liczbą!");
+                Console.ReadKey();
+                return;
+            }
 
             if (x < 0 && y < 0)
             {
