@@ -10,37 +10,75 @@ namespace if_try_catch
     {
         static void Main(string[] args)
         {
-            double A = 0, B = 0, C = 0;
-
-            Console.WriteLine("Podaj A, B oraz C:");
-
-            Console.Write("A: ");
-            A = Convert.ToDouble(Console.ReadLine());
-
-            Console.Write("B: ");
-            B = Convert.ToDouble(Console.ReadLine());
-
-            Console.Write("C: ");
-            C = Convert.ToDouble(Console.ReadLine());
-
-
-            double delta = B * B - 4 * A * C;
-            Console.WriteLine("Delta wynosi: {0}", delta);
-
-            if (delta > 0)
+            ConsoleKeyInfo input;
+            input = Console.ReadKey();
+            while (input.Key != ConsoleKey.Escape)
             {
-                Console.WriteLine("x1 = {0}\nx2 = {1}", (-B - Math.Sqrt(delta)) / 2 * A, (-B + Math.Sqrt(delta)) / 2 * A);
-            }
-            else if (delta == 0)
-            {
-                Console.WriteLine("x = {0}", -B / 2 * A);
-            }
-            else
-            {
-                Console.WriteLine("brak rozwiązań, delta ujemna");
-            }
+                double A = 0, B = 0, C = 0;
 
-            Console.ReadKey();
+                Console.WriteLine("Podaj A, B oraz C:");
+
+                Console.Write("A: ");
+                try
+                {
+                    A = Convert.ToDouble(Console.ReadLine());
+                }
+                catch (Exception e)
+                {
+                    Console.WriteLine(e);
+                    A = Math.PI;
+                }
+
+
+                Console.Write("B: ");
+                try
+                {
+                    B = Convert.ToDouble(Console.ReadLine());
+                }
+                catch (Exception e)
+                {
+                    Console.WriteLine(e);
+                    B = 0;
+                }
+
+                Console.Write("C: ");
+                try
+                {
+                    C = Convert.ToDouble(Console.ReadLine());
+                }
+                catch (Exception e)
+                {
+                    Console.WriteLine(e);
+                    C = 0;
+                }
+
+
+                if (A == 0)
+                {
+                    throw new Exception("Parametr A nie powinien wynosić 0");
+                }
+
+
+                double delta = B * B - 4 * A * C;
+                Console.WriteLine("Delta wynosi: {0}", delta);
+
+                if (delta > 0)
+                {
+                    Console.WriteLine("x1 = {0}\nx2 = {1}", (-B - Math.Sqrt(delta)) / 2 * A, (-B + Math.Sqrt(delta)) / 2 * A);
+                }
+                else if (delta == 0)
+                {
+                    Console.WriteLine("x = {0}", -B / 2 * A);
+                }
+                else
+                {
+                    Console.WriteLine("brak rozwiązań, delta ujemna");
+                }
+
+                input = Console.ReadKey();
+                //input = Console.ReadKey();
+                //input = Convert.ToChar(Console.ReadKey());
+            }
         }
     }
 }
