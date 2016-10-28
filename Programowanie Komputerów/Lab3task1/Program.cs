@@ -13,41 +13,48 @@ namespace Lab3task1 {
             */
 
             double a, b, c;
-            Console.WriteLine("Podaj wartość a");
-            Double.TryParse(Console.ReadLine(), out a);
+            try {
+                Console.WriteLine("Podaj wartość a");
+                a = Double.Parse(Console.ReadLine());
 
-            Console.WriteLine("Podaj wartość b");
-            Double.TryParse(Console.ReadLine(), out b);
+                Console.WriteLine("Podaj wartość b");
+                b = Double.Parse(Console.ReadLine());
 
-            Console.WriteLine("Podaj wartość c");
-            Double.TryParse(Console.ReadLine(), out c);
+                Console.WriteLine("Podaj wartość c");
+                c = Double.Parse(Console.ReadLine());
 
-            if(a == 0) {
-                throw new Exception("Parametr a musi być różny od zera");
+                if (a == 0) {
+                    throw new Exception("Parametr a musi być różny od zera");
+                }
+
+                double delta = b * b - 4 * a * c, x1, x2;
+
+                if (delta > 0) {
+                    x1 = (-b - Math.Sqrt(delta)) / (2 * a);
+                    x2 = (-b + Math.Sqrt(delta)) / (2 * a);
+
+                    Console.WriteLine("Równanie ma dwa pierwiastki: ");
+                    Console.WriteLine("\tx1 = {0}", x1);
+                    Console.WriteLine("\tx2 = {0}", x2);
+
+                }
+                else if (delta == 0) {
+                    x1 = -b / (2 * a);
+
+                    Console.WriteLine("Równanie ma jeden pierwiastek rzeczywisty: ");
+                    Console.WriteLine("\tx1 = {0}", x1);
+                }
+                else {
+                    Console.WriteLine("Równanie nie ma pierwiastków rzeczywistych.");
+                }
+
+                Console.ReadKey();
             }
-
-            double delta = b * b - 4 * a * c, x1, x2;
-
-            if(delta > 0) {
-                x1 = (-b - Math.Sqrt(delta)) / (2 * a);
-                x2 = (-b + Math.Sqrt(delta)) / (2 * a);
-
-                Console.WriteLine("Równanie ma dwa pierwiastki: ");
-                Console.WriteLine("\tx1 = {0}", x1);
-                Console.WriteLine("\tx2 = {0}", x2);
-
+            catch (Exception e) {
+                Console.Clear();
+                Console.WriteLine("Program został przerwany.\n{0}", e);
             }
-            else if(delta == 0) {
-                x1 = -b / (2 * a);
-
-                Console.WriteLine("Równanie ma jeden pierwiastek rzeczywisty: ");
-                Console.WriteLine("\tx1 = {0}", x1);
-            }
-            else {
-                Console.WriteLine("Równanie nie ma pierwiastków rzeczywistych.");
-            }
-
-            Console.ReadKey();
+            Console.ReadKey(false);
         }
     }
 }
