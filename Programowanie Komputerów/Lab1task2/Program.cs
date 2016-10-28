@@ -4,12 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Lab1task2
-{
-    class Program
-    {
-        static void Main(string[] args) // main
-        {
+namespace Lab1task2 {
+    class Program {
+        static void Main(string[] args) {// main
+
             /* 
              Ćwiczenie 1
                 Popraw błędy w kodzie.

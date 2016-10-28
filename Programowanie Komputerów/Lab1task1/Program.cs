@@ -4,12 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Lab1task1
-{
-    class Program
-    {
-        static void Main(string[] args)
-        {
+
+
+namespace Lab1task1 {
+    class Program {
+        static void Main(string[] args) {
             /* 
              Ćwiczenie 1
                 Utworzenie programu, który wypisuje na ekranie powitanie i czeka na reakcje
