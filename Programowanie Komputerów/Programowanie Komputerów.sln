@@ -3,11 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lab1task1", "Programowanie Komputerów\Lab1task1.csproj", "{F82F582C-5693-4BBA-9F1D-4C960F17A40B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lab1task1", "Lab1 task1\Lab1task1.csproj", "{F82F582C-5693-4BBA-9F1D-4C960F17A40B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lab1task2", "Lab1task2\Lab1task2.csproj", "{BF25011A-F2CD-4D33-9823-98C0AFB25429}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lab1task2", "Lab1 task2\Lab1task2.csproj", "{BF25011A-F2CD-4D33-9823-98C0AFB25429}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lab2task1", "Lab2task1\Lab2task1.csproj", "{10122612-94BD-4C01-A60E-B64FC8764E0F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lab2task1", "Lab2 task1\Lab2task1.csproj", "{10122612-94BD-4C01-A60E-B64FC8764E0F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
