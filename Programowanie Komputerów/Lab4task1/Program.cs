@@ -9,7 +9,8 @@ namespace Lab4task1 {
         static void Main(string[] args) {
             /*
              Ćwiczenie 1
-               Napisz program, który znajduje największy wspólny dzielnik (NWD) dwóch liczb naturalnych               Problemu ten rozwiązuje algorytm Euklidesa
+               Napisz program, który znajduje największy wspólny dzielnik (NWD) dwóch liczb naturalnych
+               Problemu ten rozwiązuje algorytm Euklidesa
             */
 
             ulong n, m, diff;

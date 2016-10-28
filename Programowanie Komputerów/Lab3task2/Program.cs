@@ -9,7 +9,8 @@ namespace Lab3task2 {
         static void Main(string[] args) {
             /*
              Ćwiczenie 2
-               Napisz program, który oblicza wartość wyrażenia:                        x*y     dla x < 0 i y < 0
+               Napisz program, który oblicza wartość wyrażenia:
+                        x*y     dla x < 0 i y < 0
                  z =    10      dla x = 0 lub y = 0
                         x+y     dla pozostałych
             */

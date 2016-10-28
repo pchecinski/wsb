@@ -14,10 +14,12 @@ namespace Lab4task4 {
                 następujący kod
                 
                 Random generator = new Random();
-                int liczba = generator.Next(a, b +1);
+                int liczba = generator.Next(a, b +1);
+
             */
             const int a = 0;
-            const int b = 200;
+            const int b = 200;
+
             Random generator = new Random();
             int liczba = generator.Next(a, b + 1);
 
