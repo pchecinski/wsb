@@ -1,3 +1,3 @@
 # wsb
 
-I have no idea what am I doing in this.
+Programowanie Komputerów - laboratoria
