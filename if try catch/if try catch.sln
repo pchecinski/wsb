@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "if try catch", "if try catc
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "wyrazenie", "wyrazenie\wyrazenie.csproj", "{BF894376-F6C7-4EEF-BC69-11DB3F21A2D4}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ask", "ask\ask.csproj", "{58F01A41-04B1-4F6B-9DD2-927F09F7D416}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{BF894376-F6C7-4EEF-BC69-11DB3F21A2D4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BF894376-F6C7-4EEF-BC69-11DB3F21A2D4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BF894376-F6C7-4EEF-BC69-11DB3F21A2D4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{58F01A41-04B1-4F6B-9DD2-927F09F7D416}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{58F01A41-04B1-4F6B-9DD2-927F09F7D416}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{58F01A41-04B1-4F6B-9DD2-927F09F7D416}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{58F01A41-04B1-4F6B-9DD2-927F09F7D416}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
