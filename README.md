@@ -10,7 +10,7 @@
  * zadanie 5: [maksimum - wyrażenie warunkowe](Programowanie Komputerów/Lab2task5/Program.cs)
 3. Laboratorium 3 - Instrukcja wyboru
  * zadanie 1: [równanie kwadratowe](Programowanie Komputerów/Lab3task1/Program.cs)
- * zadanie 2: [wartość wyrażenia w przedziałach](Programowanie Komputerów/Lab2task2/Program.cs)
+ * zadanie 2: [wartość wyrażenia w przedziałach](Programowanie Komputerów/Lab3task2/Program.cs)
 4. Laboratorium 4 - Instrukcje iteracji - pętle
  * zadanie 1: [NWD - algorytm Euklidesa](Programowanie Komputerów/Lab4task1/Program.cs)
  * zadanie 2: [przybliżona wartość pierwiastka kwadratowego](Programowanie Komputerów/Lab4task2/Program.cs)
