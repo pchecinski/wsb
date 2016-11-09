@@ -16,3 +16,5 @@
  * zadanie 2: [przybliżona wartość pierwiastka kwadratowego](Programowanie Komputerów/Lab4task2/Program.cs)
  * zadanie 3: [sumę i iloczyn liczb naturalnych](Programowanie Komputerów/Lab4task3/Program.cs)
  * zadanie 4: [gra - zgadnij liczbę](Programowanie Komputerów/Lab4task4/Program.cs)
+5. Laboratorium 5 - Pozostałe instrukcje sterujące
+ * zadanie 1: [menu - całka](Programowanie Komputerów/Lab5task1/Program.cs)
