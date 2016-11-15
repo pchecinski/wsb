@@ -6,6 +6,16 @@ using System.Threading.Tasks;
 
 namespace Lab5task1 {
     class Program {
+        /*
+         Ćwiczenie 1
+           Napisz program obliczający całkę oznaczoną z funkcji nieujemnej i całkowalnej
+            na zadanym przedziale np. f(x) = x4 + x3 + 2. Użytkownik ma do
+            wyboru:
+            - metodę (metoda prostokątów lub metoda trapezów)
+            - przedział całkowania
+            - liczbę podziałów (podprzedziałów)
+        */
+
         enum MetodyCalkowania {
             Prostokatow = 1,
             Trapezow = 2

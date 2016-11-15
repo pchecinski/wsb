@@ -9,8 +9,12 @@ namespace TestLab {
     class Program {
 
         static void Main(string[] args) {
-
+            /*
+             Ćwiczenie X
+               Treść
+               Treść
+            */
         }
-    
+
     }
 }
