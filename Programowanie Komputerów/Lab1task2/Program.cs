@@ -9,7 +9,7 @@ namespace Lab1task2 {
         static void Main(string[] args) {// main
 
             /* 
-             Ćwiczenie 1
+             Ćwiczenie 2
                 Popraw błędy w kodzie.
              */
 

@@ -19,114 +19,84 @@ namespace Lab6task2 {
             }
         }
 
-        // Odczyt macierzy
-        static double [,] mread(int columns, int rows) {
-            double [,] matrix = new double[columns, rows];
+        // Wczytanie macierzy
+        static double[,] mread(int columns, int rows) {
+            double[,] matrix = new double[columns, rows];
+            int index = 0, size = columns * rows;
 
-            for (int c = 0; c != columns; c++) {
-                for (int r = 0; r != rows; r++) {
-                    Double.TryParse(Console.ReadLine(), out matrix[c,r]);
+            while (true) {
+                foreach (String input in Console.ReadLine().Split(' ')) {
+                    if (Double.TryParse(input, out matrix[index / rows, index % rows])) {
+                        if (++index == size) { 
+                            return matrix;
+                        }
+                    }
+                }
+
+            }
+            
+        }
+
+        // Mnożenie macierzy
+        static double[,] mmult(double[,] matrixA, double[,] matrixB, int rowA, int colA, int rowB, int colB) {
+            double[,] result = new double[matrixA.GetLength(0), matrixB.GetLength(1)];
+
+            for (int r1 = 0; r1 != rowA; r1++) {
+                for (int c2 = 0; c2 != colB; c2++) {
+                    for (int r2 = 0; r2 != rowB; r2++) {
+                        result[r1, c2] += matrixA[r1, r2] * matrixB[r2, c2];
+                    }
                 }
             }
 
-            return matrix;
+            return result;
         }
 
         static void Main(string[] args) {
-
-            int columns = 3;
-            int rows = 2;
-            double[,] macierz = new double[columns, rows];
-
-            string argumenty = "a b 12 345.32 kabaczek";
-            string[] tablica_arg = argumenty.Split(' ');
-            
-
-            Console.WriteLine(tablica_arg.Length);
-
-            foreach (string s in tablica_arg) {
-                Console.WriteLine(s);
-            }
-
-            //String[] substrings = Console.ReadLine().Split(' ');
-
-
-            Console.ReadLine(); // 2
-            Console.ReadLine(); // 2 3
-
-            mread(columns, rows);
-            mwrite(columns, rows, macierz);
             /*
                 Ćwiczenie 2
                 Utwórz programu, który oblicza iloczyn dwóch macierzy. Wartości elementów
                 macierzy są podawane przez użytkownika. 
             */
-            
 
-            /*            double[][] macierz; // dobrze, ale bez sensu
-                        macierz = new double[columns][];
-                        for(int c = 0; c != columns; c++) {
-                            macierz[c] = new double[rows];
-                        }
-                */
+            // Ustawienia regionale danych wejściowych
+            System.Globalization.CultureInfo customCulture = (System.Globalization.CultureInfo)System.Threading.Thread.CurrentThread.CurrentCulture.Clone();
+            customCulture.NumberFormat.NumberDecimalSeparator = "."; // Dane wejściowe mają format 0.45 zamiast 0,45
+            System.Threading.Thread.CurrentThread.CurrentCulture = customCulture;
 
-            // TODO not done
+            // Wczytanie ilości macierzy (INT)
+            int macierze = int.Parse(Console.ReadLine());
 
+            // Wczytanie rozmiaru pierwszej macierzy (INT wiersze <spacja> INT kolumny)
+            String[] input = Console.ReadLine().Split();
+            int rows = int.Parse(input[0]);
+            int columns = int.Parse(input[1]);
 
+            // Wczytanie macierzy
+            double[,] wynik = new double[rows, columns];
+            wynik = mread(rows, columns);
+           
+            // Wymnażanie macieży dla ilości powyżej 1
+            while (macierze > 1) {
 
-            //mwrite()
-            //Console.WriteLine(dupa(123));
+                // Wczytanie rozmiaru pierwszej macierzy (INT wiersze <spacja> INT kolumny)
+                String[] next_input = Console.ReadLine().Split();
+                int next_rows = int.Parse(next_input[0]);
+                int next_columns = int.Parse(next_input[1]);
 
-            Console.ReadKey();
+                // Wczytanie macierzy
+                double[,] next = new double[next_rows, next_columns];
+                next = mread(next_rows, next_columns);
 
-
-            /*static int dupa(int i) {
-                return 2 * i;
-            }*/
-
-            int macierze = 2;
-            // Int32.TryParse(Console.ReadLine(), out macierze); // wczytanie ilości macierzy
-
-
-            int wierszeA = 3, kolumnyA = 2;
-            double[,] macierzA = new double[wierszeA, kolumnyA];
-
-
-            for (int x=0; x != wierszeA; x++) {
-                for(int y=0; y != kolumnyA; y++) {
-                    
-                }
+                // Mnożenie
+                wynik = mmult(wynik, next, rows, columns, next_rows, next_columns);
+                columns = next_columns;          
+                
+                macierze--;
             }
 
-            //            Console.ReadLine().Split(); ZROBIĘ TO ALL W OGÓLE PÓŹNIEJ :_;
-
-            /*
-
-                int matrices = 0;
-                fscanf(stdin, "%d", &matrices);
-
-                int R=0, C=0;
-                fscanf(stdin, "%d %d", &R, &C);
-                double **result = mread(stdin, &R, &C);
-
-                while(matrices>1) {
-                    int nextR=0, nextC=0;
-                    fscanf(stdin, "%d %d", &nextR, &nextC);
-                    double **next = mread(stdin, &nextR, &nextC);
-
-                    result = mmult(R,C,result,nextR,nextC,next);
-                    xfree(nextR,nextC,next);
-                    C=nextC;
-
-                    matrices--;
-                }
-
-                mwrite(stdout,R,C,result);
-                xfree(R,C,result);
-                */
-
-
-
+            // Wypisanie wyniku na ekran
+            mwrite(rows, columns, wynik);
         }
     }
 }
