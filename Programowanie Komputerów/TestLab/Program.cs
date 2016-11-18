@@ -28,6 +28,8 @@ namespace TestLab {
             Console.WriteLine(parse_bin("0.001"));
             Console.WriteLine(parse_bin("0.100"));
             Console.WriteLine(parse_bin("1.1101"));
+            //
+
 
             long z = (long)1.3;
             Console.WriteLine(z);
