@@ -13,6 +13,11 @@ using System.Diagnostics;
 namespace TestLab {
     class Program {
 
+        static double parse_bin(string s) {
+            String[] t = s.Split('.');
+            return Convert.ToInt32(t[0], 2) + Convert.ToInt32(t[1], 2) / Math.Pow(2.0, t[1].Length);
+        }
+
         static void Main(string[] args) {
             /*
              Ćwiczenie X
@@ -20,6 +25,17 @@ namespace TestLab {
                Treść
             */
 
+            Console.WriteLine(parse_bin("0.001"));
+            Console.WriteLine(parse_bin("0.100"));
+            Console.WriteLine(parse_bin("1.1101"));
+
+            long z = (long)1.3;
+            Console.WriteLine(z);
+
+            //Double var = 1;
+            //Console.WriteLine("{0:I}", var);
+
+            //
 
 
             String line = Console.ReadLine();
