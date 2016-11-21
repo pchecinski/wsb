@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Globalization;
+using System.Numerics;
 
 /*
 using System.Collections.Generic;
@@ -9,9 +10,28 @@ using System.Threading.Tasks;
 using System.Diagnostics;
 */
 
-
 namespace TestLab {
     class Program {
+
+        static double distance2D(double x1, double y1, double x2, double y2) {
+            return Math.Sqrt(Math.Pow((x1 - x2), 2) + Math.Pow((y1 - y2), 2));
+        }
+
+
+        static BigInteger factorial(int n) {
+            return n == 1 ? n : n * factorial(n - 1);
+        }
+
+        static int ack(int m, int n) {
+            int ans;
+
+            if (m == 0) ans = n + 1;
+            else if (n == 0) ans = ack(m - 1, 1);
+            else ans = ack(m - 1, ack(m, n - 1));
+
+            return ans;
+        }
+
 
         static double parse_bin(string s) {
             String[] t = s.Split('.');
@@ -19,6 +39,34 @@ namespace TestLab {
         }
 
         static void Main(string[] args) {
+
+            Console.WriteLine(distance2D(2,5, 5,9));
+            Console.ReadKey();
+
+            return;
+
+            int X = 8000;
+            Console.WriteLine("factorial ({0}) is: {1}", X, factorial(X));
+
+        
+
+            Console.ReadKey();
+            return;
+
+            int sum = 0;
+            for(int i = 1; i != 1000000 + 1; i++) {
+                char [] arr = i.ToString().ToCharArray();
+
+                foreach(char a in arr) {
+                    sum += ((int)a - 48);
+                }
+
+            }
+            Console.WriteLine(sum);
+            Console.ReadKey();
+            return;
+
+
             /*
              Ćwiczenie X
                Treść
