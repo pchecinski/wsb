@@ -134,12 +134,20 @@ namespace LabX {
 
                 case '7':
 
-                    for(int AA = 1; AA != 100; AA++) {
+                    for (int AA = 1; AA != 100; AA++) {
                         for (int BB = 1; BB != 100; BB++) {
 
-                            Math.Pow(AA, 2) + Math.Pow(AA, 2) == Math.Sqrt();
+                            if(Math.Sqrt(Math.Pow(AA, 2) + Math.Pow(BB, 2)) == Math.Round(Math.Sqrt(Math.Pow(AA, 2) + Math.Pow(BB, 2)))) {
+                                Console.WriteLine("{0}^2 + {1}^2 = {2}^2", AA, BB, Math.Sqrt(Math.Pow(AA, 2) + Math.Pow(BB, 2)));
+                            }
+
+                            
+                            //if ) {
+                            //}
+                            // == ;
 
                         }
+                    }
 
                     break;
             }
