@@ -21,7 +21,7 @@ namespace LabX {
 
             char c = Console.ReadKey(true).KeyChar;
             
-            // Czyści konsole i podane numer programu, estatyka
+            // Czyści konsole i podaje numer programu, estatyka
             Console.Clear();
             Console.WriteLine("Wybrano program {0}", c);
 
