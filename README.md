@@ -26,5 +26,4 @@
  * zadanie 1: [sortowanie przez wstawianie](Programowanie Komputerów/Lab7task1/Program.cs)
  * zadanie 2: [sorotowanie przez wybieranie](Programowanie Komputerów/Lab7task2/Program.cs)
  * zadanie 3: [ręczna implementacja "binary search"](Programowanie Komputerów/Lab7task3/Program.cs)
-
  * powtórka: [podczas labolatorium](Programowanie Komputerów/Lab7/Program.cs)
