@@ -13,7 +13,7 @@ namespace LabX {
             Console.WriteLine("1. obliczanie objętości graniastosłupa");
             Console.WriteLine("2. prostokąt z gwiazdek");
             Console.WriteLine("3. pobieranie liczb do tablicy");
-            Console.WriteLine("4. suma aż 0");
+            Console.WriteLine("4. suma liczb do podania 0");
             Console.WriteLine("5. suma cyfr w podanej liczbie:");
             Console.WriteLine("6. konwersja systemów");
             Console.WriteLine("7. trójki pitagorejskie");
@@ -150,14 +150,13 @@ namespace LabX {
                  Zadanie 6: Konwersja sytemu 10 na 16. Algorytm trochę oszukańczy ale bazowałem się na:
                             http://www.programuj.com/artykuly/rozne/sysliczb.php
                             i = 8 bo int ogranicza nas do 2^32 czyli 16^8 :)
-                            uint bo dla ujemnych i tak wychodzą pierdoły
                  */
                 case '6': {
-                        uint n = 0;
-                        UInt32.TryParse(Console.ReadLine(), out n);
+                        int n = 0;
+                        Int32.TryParse(Console.ReadLine(), out n);
 
                         for (int i = 8; i >= 0; i--) {
-                            uint x = n / (uint)Math.Pow(16, i);
+                            int x = n / (int)Math.Pow(16, i);
                             switch (x) {
                                 case 10:
                                     Console.Write("A");
@@ -188,7 +187,7 @@ namespace LabX {
                                     break;
                             }
                             
-                            n = n % (uint)Math.Pow(16, i);
+                            n = n % (int)Math.Pow(16, i);
                         }
                         
                         break;

@@ -2,14 +2,50 @@
 using System.Globalization;
 using System.Numerics;
 
-/*
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Diagnostics;
-*/
+namespace TestLab {
+    class Program {
 
+        static string convert(int n, int convert_to) {
+            string output = "";
+            bool zero = true;
+
+            char[] base_chars = { '0', '1', '2', '3', '4', '6', '7', '8', '9', 'A', 'B', 'C', 'D', 'E', 'F' };
+
+            for (int i = 32; i >= 0; i--) {
+                int x = n / (int)Math.Pow(convert_to, i);
+                
+                if(x == 0 && zero) {
+                    continue;
+                }
+                zero = false;
+                output += base_chars[x];
+
+                n = n % (int)Math.Pow(convert_to, i);
+            }
+
+            return output;
+        }
+
+        static void Main(string[] args) {
+
+            int n = 0;
+            Int32.TryParse(Console.ReadLine(), out n);
+
+            Console.Clear();
+            Console.WriteLine("Liczba {0}", n);
+            Console.WriteLine("2:\t{0}", convert(n, 2));
+            Console.WriteLine("8:\t{0}", convert(n, 8));
+            Console.WriteLine("16:\t{0}", convert(n, 16));
+
+            Console.WriteLine("3:\t{0}", convert(n, 3));
+
+            Console.ReadKey();
+        }
+    }
+}
+
+
+/*
 namespace TestLab {
     class Program {
 
@@ -40,6 +76,11 @@ namespace TestLab {
 
         static void Main(string[] args) {
 
+            Console.WriteLine(1 / 3 * 3);
+            Console.WriteLine((double)1 / 3 * 3);
+            Console.ReadKey();
+            return;
+
             Console.WriteLine(distance2D(2,5, 5,9));
             Console.ReadKey();
 
@@ -67,11 +108,11 @@ namespace TestLab {
             return;
 
 
-            /*
+            //*
              Ćwiczenie X
                Treść
                Treść
-            */
+            // * ///
 
             Console.WriteLine(parse_bin("0.001"));
             Console.WriteLine(parse_bin("0.100"));
@@ -100,9 +141,9 @@ namespace TestLab {
             System.Globalization.CultureInfo customCulture = (System.Globalization.CultureInfo)System.Threading.Thread.CurrentThread.CurrentCulture.Clone();
             customCulture.NumberFormat.NumberDecimalSeparator = "."; // Dane wejściowe mają format 0.45 zamiast 0,45
             System.Threading.Thread.CurrentThread.CurrentCulture = customCulture;
-            */
+            * /
 
-            /*
+            / *
             Console.OutputEncoding = System.Text.Encoding.UTF8;
 
             Console.WriteLine("\u2103");
@@ -115,8 +156,9 @@ namespace TestLab {
                 }
             }
             Console.ReadKey();
-            */
+            * /
         }
 
     }
 }
+*/
