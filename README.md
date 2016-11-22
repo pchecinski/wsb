@@ -18,3 +18,9 @@
  * zadanie 4: [gra - zgadnij liczbę](Programowanie Komputerów/Lab4task4/Program.cs)
 5. Laboratorium 5 - Pozostałe instrukcje sterujące
  * zadanie 1: [menu - całka](Programowanie Komputerów/Lab5task1/Program.cs)
+6. Laboratorium 6 - Tablice
+ * zadanie 1: [tablica losowych wartości, minimum i maksimum](Programowanie Komputerów/Lab6task1/Program.cs)
+ * zadanie 2: [iloczyn N macierzy X,Y](Programowanie Komputerów/Lab6task2/Program.cs)
+ * zadanie 3: [losowanie bez powtórzeń](Programowanie Komputerów/Lab6task3/Program.cs)
+7. Laboratorium 7 - Powtórzenie
+ * zadannia 1-7: [podczas labolatorium](Programowanie Komputerów/Lab7/Program.cs)
