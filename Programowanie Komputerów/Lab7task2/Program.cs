@@ -9,7 +9,7 @@ namespace Lab7task2 {
         static void Main(string[] args) {
             /*
              Ćwiczenie 2
-               Napisz program, który sortuje tablicę metodą przez wstawianie. Tablicę
+               Napisz program, który sortuje tablicę metodą przez wybieranie. Tablicę
                 zainicjalizuj liczbami pseudolosowymi, korzystając z generatora liczb
                 pseudolosowych.
             */
