@@ -8,11 +8,11 @@ namespace Lab7task2 {
     class Program {
         static void Main(string[] args) {
             /*
-              Ćwiczenie 1
-                Napisz program, który sortuje tablicę metodą przez wybieranie. Tablicę
-                 zainicjalizuj liczbami pseudolosowymi, korzystając z generatora liczb
-                 pseudolosowych.
-             */
+             Ćwiczenie 2
+               Napisz program, który sortuje tablicę metodą przez wstawianie. Tablicę
+                zainicjalizuj liczbami pseudolosowymi, korzystając z generatora liczb
+                pseudolosowych.
+            */
 
             Random rand = new Random();
             double[] liczby = new double[16];
