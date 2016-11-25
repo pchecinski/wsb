@@ -23,4 +23,7 @@
  * zadanie 2: [iloczyn N macierzy X,Y](Programowanie Komputerów/Lab6task2/Program.cs)
  * zadanie 3: [losowanie bez powtórzeń](Programowanie Komputerów/Lab6task3/Program.cs)
 7. Laboratorium 7 - Powtórzenie
- * zadannia 1-7: [podczas labolatorium](Programowanie Komputerów/Lab7/Program.cs)
+ * zadanie 1: [sortowanie przez wstawianie](Programowanie Komputerów/Lab7task1/Program.cs)
+ * zadanie 2: [sorotowanie przez wybieranie](Programowanie Komputerów/Lab7task2/Program.cs)
+ * zadanie 3: [ręczna implementacja "binary search"](Programowanie Komputerów/Lab7task3/Program.cs)
+ * powtórka: [podczas labolatorium](Programowanie Komputerów/Lab7/Program.cs)
