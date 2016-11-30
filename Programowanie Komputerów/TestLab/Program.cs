@@ -2,6 +2,29 @@
 using System.Globalization;
 using System.Numerics;
 
+
+namespace TestLab {
+    class Program {
+        static void Main() {
+
+            double h = 0, r = 0;
+
+            do {
+                Console.WriteLine("Podaj wysokość (wartość musi być dodatnia): ");
+            } while (!Double.TryParse(Console.ReadLine(), out h) || h < 0);
+
+            do {
+                Console.WriteLine("Podaj promień (wartość musi być dodatnia): ");
+            } while (!Double.TryParse(Console.ReadLine(), out r) || r < 0);
+
+
+            Console.WriteLine("Promień: {0}", Math.PI * Math.Pow(r, 2) * h / 3);
+            Console.ReadKey(true);
+        }
+    }
+}
+
+/*
 namespace TestLab {
     class Program {
 
@@ -44,6 +67,7 @@ namespace TestLab {
     }
 }
 
+*/
 
 /*
 namespace TestLab {
