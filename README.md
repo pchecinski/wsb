@@ -27,3 +27,6 @@
  * zadanie 2: [sorotowanie przez wybieranie](Programowanie Komputerów/Lab7task2/Program.cs)
  * zadanie 3: [ręczna implementacja "binary search"](Programowanie Komputerów/Lab7task3/Program.cs)
  * powtórka: [podczas labolatorium](Programowanie Komputerów/Lab7/Program.cs)
+
+
+https://skystork3.pl/macierz
